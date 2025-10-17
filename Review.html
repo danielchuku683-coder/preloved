@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reviews - Prelovedbycoco</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&faily=
+    playfair+Display:@600&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            font-family: 'Poppins' sans-serif;
+            background: #f6f3fa;
+            margin: 0;
+        }
+        header{
+            background: #4b006e;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+             margin: 0 1rem;
+            gap: 30px;
+        }
+
+        nav ul {
+            gap: 30px;
+            display: flex;
+        }
+
+        .navbar a:hover{
+            color: #ffb6ff;
+            text-decoration: underline
+        }
+        #reviews{
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .review:hover{
+            transform: scale(1.05);
+          box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        .review{
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+        }
+        .review h3{
+            color: #4b006e;
+        }
+        footer{
+            text-align: center;
+            padding: 90px;
+            background: #000;
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+        .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+        @keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Customer Reviews</h1>
+        <nav>
+            <ul>
+            <li><a href="style.html">Home</a></li>
+            <li><a href="available.html">product</a></li>
+            <li><a href="content.html">Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reviews" class="fade-in">
+        <div class="review">
+            <h3>Sandra O.</h3>
+            <p>"I Love my dress! The quality
+                is top-notch and delivery was fast.
+                Definiately buying gain".
+            </p>
+        </div>
+
+        <div class="review">
+            <h3>Anita T.</h3>
+            <p>"Beautiful packaging and friendly customer service.
+                Prelovedbycoco never disapoints!""
+            </p>
+        </div>
+
+        <div class="review">
+            <h3>Vanessa K.</h3>
+            <p>"Affordable and classy. My new favorite store"</p>
+        </div>
+    </section>
+
+    <footer class="fade-in">
+        <p>
+            &copy; 2025 Prelovedbycoco | Lagos, Nigeria
+        </p>
+    </footer>
+</body>
+</html>

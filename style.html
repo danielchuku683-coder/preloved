@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelovedbycoco</title>
+
+    <!--Google Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&faily=
+    playfair+Display:@600&display=swap">
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        /*GENERAL*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: 'Poppins' sans-serif;
+            background: linear-gradient(to bottom right, #4b006e,#8a2be2);
+            color: white;
+            overflow-x: hidden;
+        }
+        
+        #loader{
+            position: fixed;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            background: #6a0dad;
+            z-index: 999999;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+            opacity: 1;
+            visibility: visible;
+        }
+        #loader.hidden{
+            opacity: 0;
+            visibility: hidden;
+        }
+        #loader video{
+            max-width: fit-content;
+            height: auto;
+            display: block;
+        }
+
+
+        header{
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        header h1{
+            font-family: 'Playfair Display';
+        }
+
+        header p{
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        /*NAVBAR*/
+        #navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.3);
+            padding: 15px;
+            gap: 100px;
+            position: sticky;
+            backdrop-filter: blur(8px);
+        }
+
+        #navbar a{
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        #navbar a:hover{
+            color: #ffb6ff;
+            text-decoration: underline;
+        }
+
+        #content{
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        #hero{
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        #hero img{
+            width: 50%;
+            min-width: 700px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.2);
+        }
+
+        #products{
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        #product h2{
+            text-align: center;
+            font-family: 'playfair Display' serif;
+            margin: 30px;
+            font-size: 2.2em;
+        }
+
+        #product-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product{
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+            
+        }
+        .product:hover{
+            transform: rotateY(-5px);
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        .product img{
+            width: 100px;
+            border-radius: 15px;
+            height: 280px;
+            object-fit: cover;
+            
+        }
+
+        .product h3{
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+        .product p{
+            font-size: 0.95em;
+            opacity: 0.8;
+        }
+
+        .product:hover{
+            transform: scale(1.05);
+          box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        .product button{
+            margin-top: 10px;
+            background: #ffb6ff;
+            border: none;
+            color: #4b006e;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.3;
+        }
+
+        .product button:hover{
+            background: white;
+            color: #4b006e;
+        }
+
+        footer{
+            text-align: center;
+            padding: 90px;
+            background: #000;
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <video id="introLogo" autoplay muted playsinline>
+            <source src="Preloved by Coco sounds like an intriguing concept, possibly a brand or platform that focuses on sustainable fashion by offering preloved or second-hand items. This initiative could appeal to envi (1).mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--Navbar-->
+    <div id="navbar" style="display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.3);
+            padding: 15px;
+            gap: 100px;
+            position: sticky;
+            backdrop-filter: blur(8px);" class="fade-in">
+        <img src="prelovedbycoco.jpg" alt="" width="70px">
+        <a href="available.html">product</a>
+        <a href="Review.html">Reviews</a>
+        <a href="content.html">Content</a>
+    </div>
+    <header class="fade-in">
+        
+        <h1>_PRELOVEDBYCOCO_ CLOTHINB BRAND</h1>
+        <p>Trendy & Chic Wear | Slay on a Budget</p>
+    </header>
+
+    <div id="content" class="fade-in">
+        <p>UK/US Brand new & Preowned Wear 
+            - Slay on budget <br>
+            Nationwide delivery | Exchange & Wholesale <br>
+            Place orders <b>NOW!</b> <br> 
+            <b>LOCATION:</b> Lagos
+        </p>
+    </div>
+
+    <!--HERO SECTION-->
+    <section id="hero" class="fade-in">
+        <img src="preloved1.jpg" alt="Fashion Collection" style="height: auto;">
+          <h2>New Arrivals - Shop the Latest Trends</h2>
+    </section>
+
+    <!--products section-->
+    <section class="product" id="fade-in">
+        <h2>Our Collection</h2>
+        <div id="product-grid" class="fade-in">
+            <div class="product">
+                <img src="preloved3.jpg" alt="Dress 1">
+                <h3>Chic Floral Dress</h3>
+                <p>N12,000</p>
+                <button>Add to Cart</button>
+            </div>
+ 
+            <div class="product" id="fade-in">
+                <img src="ppreloved2.jpg" alt="Dress 2">
+                <h3>Elegant Black Top</h3>
+                <p>N9,500</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" id="fade-in">
+                <img src="preloved.jpg" alt="Dress 3">
+                <h3>Denim Jacket</h3>
+                <p>N15,000</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+       <!--Footer-->
+       <footer class="fade-in">
+       &copy;2025 prelovedbycoco.| All Rights Reserved. | Lagos, Nigeria
+       </footer>
+
+       <script>
+        const loader = 
+        document.getElementById('loader');
+        const logo = 
+        document.getElementById('introLogo');
+
+        const seenAnimation = 
+        sessionStorage.getItem('seenLoader');
+
+        if (seenAnimation) {
+            // Hide loader instantly if already seen
+            loader.style.display = 'none';
+        } else {
+            //mark as seen so won't show again this session
+            sessionStorage.setItem('seenLoader', 'true' );
+
+            // Disable scroll during animation
+            document.body.style.overflow = 'hidden';
+
+            // when video ends, fade it out and show the site
+            logo.addEventListener('ended', () => {
+                loader.classList.add('hidden');
+                setTimeout(() =>{
+                    loader.remove();
+                    document.body.style.overflow = 'auto'
+                }, 600 );
+            } );
+
+            // Safety timeout (in case video doesn't trigger 'end')
+            setTimeout(() =>{
+                if (loader) {
+                    loader.classList.add('hidden');
+                    setTimeout(() =>
+                loader.remove(), 600 );
+                document.body.style.overflow = 'auto';
+                }
+            }, 8000); // 8 seconds max
+        }
+        
+    </script>
+ 
+</body>
+</html>

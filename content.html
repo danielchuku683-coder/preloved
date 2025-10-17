@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content - Prelovedbycoco</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            font-family: sans-serif;
+            background:#fff6f6 ;
+            color: #333;
+            margin: 0;
+        }
+
+        header{
+            background:#4b006e ;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            margin: 20px;
+        }
+        #about, #update{
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        #about h2, #update h2{
+            color: #8a2be2;
+            margin-bottom: 15px;
+        }
+
+        #update:hover{
+            transform: scale(2.05);
+          box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+
+        .post{
+           background: #f9f9f9;
+           border-left: 5px solid #8a2be2;
+           margin: 15px o;
+           padding: 15px;
+           border-radius: 5px;
+        }
+
+        footer{
+            text-align: center;
+            padding: 90px;
+            background: #000;
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Our Story & Update</h1>
+        <nav>
+            <a href="style.html">Home</a>
+            <a href="available.html">Product</a>
+            <a href="Review.html">Reviews</a>
+        </nav>
+    </header>
+
+    <section id="about" class="fade-in">
+        <h2>About Prelovedbycoco</h2>
+        <p>
+            prelovedbycoco is a Lagos-based clothing brand bringing you trendy, classy, and budget-friendly fashion. <br>
+              We believe fashion should make you feel confident, bold, and beautiful - without breaking the bank.
+        </p>
+
+        <p>
+            From preloved treasures to brand-new arrivals, evey piece is handpicked to help you express your style effortlessly. <br>
+              Join the Coco family today and slay every look with pride.
+        </p>
+    </section>
+
+    <section id="update" class="fade-in">
+        <div class="post">
+        <h2>Latest Updates</h2>
+        <h3>New Collection Drop!</h3>
+        <p>Our "Luxury on a Budget"
+            collection is here - featuring silk tops, satin gowns, and more! Don't miss out
+        </p>
+        </div>
+
+        <div class="post">
+            <h3>Nationwide Delivery</h3>
+            <p>We deliver across Nigeria fast and safe. <br>
+            Place your order now and get your items in 2-4 days!</p>
+        </div>
+    </section>
+
+    <footer class="fade-in">
+        &copy; 2025 prelovedbycoco. | All Rights Reserved. | Lagos, Nigeria
+    </footer>
+</body>
+</html>
